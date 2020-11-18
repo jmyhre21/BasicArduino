@@ -45,11 +45,41 @@ This made me feel like I did something when I got it and it was really fun tryin
 ### Description & Code
 
 ```C++
-Code Goes Here
+
+int ledPin = 13;
+int blinkTime = 500;
+bool eyesStinging=true;
+
+
+void setup()
+{
+  pinMode(ledPin, OUTPUT);
+if(eyesStinging)                         //Only blink if it's absolutely necessary
+  blinkyBlinky(5, blinkTime); // 5 is number of blinks, blinkTime is the milliseconds in each state from above: int blinkTime = 500;
+}
+
+void loop()
+{
+
+
+  //
+}
+
+void blinkyBlinky(int repeats, int time)
+{
+  for (int i = 0; i < repeats; i++)
+  {
+    digitalWrite(ledPin, HIGH);
+    delay(time);
+    digitalWrite(ledPin, LOW);
+    delay(time);
+  }
+}
 ```
 
 ### Evidence
-
+[Link to code](https://create.arduino.cc/editor/jmyhre21/38142e8f-038e-4b3d-a254-b2024cdc2033)
 ### Image or Wiring
-
+![Image of wiring](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/1/0/sik_redboard_circuit_01.png)
 ### Reflection
+I was put in a breakout room and wes and sahana were very helpful to help me figure out the code. Sahana gave me a [link](https://forum.arduino.cc/index.php?topic=273575.0) to the code, I used the second code down and it worked without problems.
