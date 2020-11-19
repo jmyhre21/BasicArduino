@@ -45,7 +45,6 @@ This made me feel like I did something when I got it and it was really fun tryin
 ### Description & Code
 
 ```C++
-
 int ledPin = 13;
 int blinkTime = 500;
 bool eyesStinging=true;
@@ -65,16 +64,17 @@ void loop()
   //
 }
 
-void blinkyBlinky(int repeats, int time)
-{
-  for (int i = 0; i < repeats; i++)
-  {
-    digitalWrite(ledPin, HIGH);
-    delay(time);
+void blinkyBlinky(int repeats, int time)// If statements tell a computer what to do with certain information
+{ // You do not always need an else statement and they are used to run specific code if none of the conditions are met. And you only need an else statement if "if" in some way cannot be met.
+  for (int i = 0; i < repeats; i++) // they allow the code to have different types of instructions
+  {// 
+    digitalWrite(ledPin, HIGH);//The double equal sign means "is equal to" and the single equal sign can be roughly translated into "is."
+    delay(time);//(https://www.arduino.cc/reference/en/)
     digitalWrite(ledPin, LOW);
     delay(time);
   }
 }
+
 ```
 
 ### Evidence
