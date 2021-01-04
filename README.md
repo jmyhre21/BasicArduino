@@ -35,7 +35,7 @@ void loop() {
 ### Evidence
 [Here is my code on Arduino Create](https://create.arduino.cc/editor/jmyhre21/38142e8f-038e-4b3d-a254-b2024cdc2033)
 
-### Image or Wiring
+### Image of Wiring
 ![Image of wiring](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/1/0/sik_redboard_circuit_01.png)
 ### Reflection
 This made me feel like I did something when I got it and it was really fun trying to figure it out.
@@ -79,7 +79,34 @@ void blinkyBlinky(int repeats, int time)// If statements tell a computer what to
 
 ### Evidence
 [Link to code](https://create.arduino.cc/editor/jmyhre21/38142e8f-038e-4b3d-a254-b2024cdc2033)
-### Image or Wiring
+### Image of Wiring
 ![Image of wiring](https://cdn.sparkfun.com/r/600-600/assets/learn_tutorials/3/1/0/sik_redboard_circuit_01.png)
 ### Reflection
 I was put in a breakout room and wes and sahana were very helpful to help me figure out the code. Sahana gave me a [link](https://forum.arduino.cc/index.php?topic=273575.0) to the code, I used the second code down and it worked without problems.
+## One Button One LED
+
+### Description and code
+/*
+ * Button held on pin A5 turns LED attached to pin 11 on
+ */
+
+void setup(){ 
+  pinMode(11, OUTPUT);  //LED pin
+  pinMode(A5, INPUT_PULLUP); //pushbutton pin    
+}
+
+void loop(){
+  //if the pushbutton is pressed, hold the LED on
+  if (digitalRead(A5) == LOW){ 
+      digitalWrite(11, HIGH);
+  } 
+  else {
+      digitalWrite(11,LOW);   //otherwise, turn LED off
+  }
+}
+### Evidence
+[Link to code](https://create.arduino.cc/editor/jmyhre21/3c49126e-3cc5-4d81-82f1-53e9fa6752bd)
+### Image of Wiring
+[Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Farduinogetstarted.com%2Ftutorials%2Farduino-button-led&psig=AOvVaw1SLfpVz9Z3DXVCetpP57yH&ust=1609856745462000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODV8vS9gu4CFQAAAAAdAAAAABAI)
+### Reflection
+This took me a little bit to figure out because I kept on messing up the directions of resistors and LED but I got it in the end.
