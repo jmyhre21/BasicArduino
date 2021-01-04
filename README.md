@@ -107,6 +107,6 @@ void loop(){
 ### Evidence
 [Link to code](https://create.arduino.cc/editor/jmyhre21/3c49126e-3cc5-4d81-82f1-53e9fa6752bd)
 ### Image of Wiring
-[Image](https://www.google.com/url?sa=i&url=https%3A%2F%2Farduinogetstarted.com%2Ftutorials%2Farduino-button-led&psig=AOvVaw1SLfpVz9Z3DXVCetpP57yH&ust=1609856745462000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCODV8vS9gu4CFQAAAAAdAAAAABAI)
+[Image](https://arduinogetstarted.com/images/tutorial/arduino-led-button-wiring-diagram.jpg)
 ### Reflection
 This took me a little bit to figure out because I kept on messing up the directions of resistors and LED but I got it in the end.
